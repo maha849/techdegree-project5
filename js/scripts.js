@@ -1,17 +1,14 @@
 
-let $search;
 
-$( "#search" ).keyup(function() {
-  const $search_value = $(this).val();
-  $search = $search_value.toLowerCase();
-});
-
-$('a').each(function(){
-
-
-  const $caption = $(this).attr('data-title').toLowerCase();
-  if($search == $caption){
-    console.log( $(this) );
+$('input').on('keyup', function(){
+  const input = $('input').val();
+  for(let i=0; i < $('a').length; i+=1){
+    let $a = $('a').eq(i);
+    let content = $a.attr("data-title");
+    if(content.indexOf(input) == -1){
+      $a.css("display", "none");
+    }else{
+      $a.css("display", "block");
+    }
   }
-
 });
