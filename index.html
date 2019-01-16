@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/lightbox.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Photo gallery</title>
+</head>
+<body>
+  <main class="wrapper">
+      <input id="search" name="search-images" data-list=".list" type="text" placeholder="Search">
+    <section class="list">
+        <a href="photos/01.jpg" data-lightbox="gallery-image" data-title="Pasture">
+          <img src="photos/thumbnails/01.jpg" alt="pasture">
+        </a>
+        <a href="photos/02.jpg" data-lightbox="gallery-image" data-title="Lake">
+          <img src="photos/thumbnails/02.jpg" alt="Lake">
+        </a>
+        <a href="photos/03.jpg" data-lightbox="gallery-image" data-title="Hay">
+          <img src="photos/thumbnails/03.jpg" alt="Hay">
+        </a>
+        <a href="photos/04.jpg" data-lightbox="gallery-image" data-title="Ice">
+          <img src="photos/thumbnails/04.jpg" alt="Ice">
+        </a>
+        <a href="photos/05.jpg" data-lightbox="gallery-image" data-title="Rock">
+          <img src="photos/thumbnails/05.jpg" alt="Rock">
+        </a>
+        <a href="photos/06.jpg" data-lightbox="gallery-image" data-title="Tree">
+          <img src="photos/thumbnails/06.jpg" alt="Tree">
+        </a>
+        <a href="photos/07.jpg" data-lightbox="gallery-image" data-title="Scenary">
+          <img src="photos/thumbnails/07.jpg" alt="Scenary">
+        </a>
+        <a href="photos/08.jpg" data-lightbox="gallery-image" data-title="Sand">
+          <img src="photos/thumbnails/08.jpg" alt="Sand">
+        </a>
+        <a href="photos/09.jpg" data-lightbox="gallery-image" data-title="Path">
+          <img src="photos/thumbnails/09.jpg" alt="Path">
+        </a>
+        <a href="photos/10.jpg" data-lightbox="gallery-image" data-title="Sea">
+          <img src="photos/thumbnails/10.jpg" alt="Sea">
+        </a>
+        <a href="photos/11.jpg" data-lightbox="gallery-image" data-title="Cave">
+          <img src="photos/thumbnails/11.jpg" alt="Cave">
+        </a>
+        <a href="photos/12.jpg" data-lightbox="gallery-image" data-title="Snow">
+          <img src="photos/thumbnails/12.jpg" alt="Snow">
+        </a>
+    </section>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/lightbox.js"></script>
+  </script>
+  <script>
+    lightbox.option({
+      'alwaysShowNavOnTouchDevices': true,
+      'showImageNumberLabel': false,
+      'wrapAround': true
+    });
+  </script>
+  <script type="text/javascript" src="js/scripts.js"></script>
+</body>
+</html>

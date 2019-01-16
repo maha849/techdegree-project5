@@ -1,0 +1,15 @@
+
+ // Media Queries
+
+
+@mixin ipad {
+  @media (min-width: #{$ipad-width}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
